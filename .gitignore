@@ -1,0 +1,12 @@
+.DS_Store
+.svn
+bin
+gen
+RemoteSystemsTempFiles
+.metadata
+.class
+.m
+.a
+
+*.apk
+local.properties

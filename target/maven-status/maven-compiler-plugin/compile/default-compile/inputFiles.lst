@@ -1,0 +1,8 @@
+/home/ruysay/WorkSpace/workspace_dropwizard_test/hello/src/main/java/com/lawrence/web/HelloWorldConfiguration.java
+/home/ruysay/WorkSpace/workspace_dropwizard_test/hello/src/main/java/com/lawrence/web/Saying.java
+/home/ruysay/WorkSpace/workspace_dropwizard_test/hello/src/main/java/com/lawrence/web/db/UserDAO.java
+/home/ruysay/WorkSpace/workspace_dropwizard_test/hello/src/main/java/com/lawrence/web/HelloWorldResource.java
+/home/ruysay/WorkSpace/workspace_dropwizard_test/hello/src/main/java/com/lawrence/web/db/DAOResponse.java
+/home/ruysay/WorkSpace/workspace_dropwizard_test/hello/src/main/java/com/lawrence/web/health/MyHealthCheck.java
+/home/ruysay/WorkSpace/workspace_dropwizard_test/hello/src/main/java/com/lawrence/web/UserResource.java
+/home/ruysay/WorkSpace/workspace_dropwizard_test/hello/src/main/java/com/lawrence/web/HelloWorldApplication.java
