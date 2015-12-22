@@ -1,0 +1,54 @@
+#!/bin/bash
+deleted:    target/apidocs/allclasses-frame.html
+	deleted:    target/apidocs/allclasses-noframe.html
+	deleted:    target/apidocs/com/lawrence/web/HelloWorldApplication.html
+	deleted:    target/apidocs/com/lawrence/web/HelloWorldConfiguration.html
+	deleted:    target/apidocs/com/lawrence/web/HelloWorldResource.html
+	deleted:    target/apidocs/com/lawrence/web/Saying.html
+	deleted:    target/apidocs/com/lawrence/web/UserResource.html
+	deleted:    target/apidocs/com/lawrence/web/class-use/HelloWorldApplication.html
+	deleted:    target/apidocs/com/lawrence/web/class-use/HelloWorldConfiguration.html
+	deleted:    target/apidocs/com/lawrence/web/class-use/HelloWorldResource.html
+	deleted:    target/apidocs/com/lawrence/web/class-use/Saying.html
+	deleted:    target/apidocs/com/lawrence/web/class-use/UserResource.html
+	deleted:    target/apidocs/com/lawrence/web/db/DAOResponse.html
+	deleted:    target/apidocs/com/lawrence/web/db/UserDAO.html
+	deleted:    target/apidocs/com/lawrence/web/db/class-use/DAOResponse.html
+	deleted:    target/apidocs/com/lawrence/web/db/class-use/UserDAO.html
+	deleted:    target/apidocs/com/lawrence/web/db/package-frame.html
+	deleted:    target/apidocs/com/lawrence/web/db/package-summary.html
+	deleted:    target/apidocs/com/lawrence/web/db/package-tree.html
+	deleted:    target/apidocs/com/lawrence/web/db/package-use.html
+	deleted:    target/apidocs/com/lawrence/web/health/MyHealthCheck.html
+	deleted:    target/apidocs/com/lawrence/web/health/class-use/MyHealthCheck.html
+	deleted:    target/apidocs/com/lawrence/web/health/package-frame.html
+	deleted:    target/apidocs/com/lawrence/web/health/package-summary.html
+	deleted:    target/apidocs/com/lawrence/web/health/package-tree.html
+	deleted:    target/apidocs/com/lawrence/web/health/package-use.html
+	deleted:    target/apidocs/com/lawrence/web/package-frame.html
+	deleted:    target/apidocs/com/lawrence/web/package-summary.html
+	deleted:    target/apidocs/com/lawrence/web/package-tree.html
+	deleted:    target/apidocs/com/lawrence/web/package-use.html
+	deleted:    target/apidocs/constant-values.html
+	deleted:    target/apidocs/deprecated-list.html
+	deleted:    target/apidocs/help-doc.html
+	deleted:    target/apidocs/index-all.html
+	deleted:    target/apidocs/index.html
+	deleted:    target/apidocs/overview-frame.html
+	deleted:    target/apidocs/overview-summary.html
+	deleted:    target/apidocs/overview-tree.html
+	deleted:    target/apidocs/package-list
+	deleted:    target/apidocs/script.js
+	deleted:    target/apidocs/stylesheet.css
+	deleted:    target/findbugs-exclude.xml
+	deleted:    target/findbugs.xml
+	deleted:    target/findbugsXml.xml
+	deleted:    target/hello-1.0-SNAPSHOT-javadoc.jar
+	deleted:    target/hello-1.0-SNAPSHOT-sources.jar
+	deleted:    target/javadoc-bundle-options/javadoc-options-javadoc-resources.xml
+	deleted:    target/javadoc-bundle-options/package-list
+
+
+
+
+
