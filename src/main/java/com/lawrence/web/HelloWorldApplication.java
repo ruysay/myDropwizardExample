@@ -2,13 +2,19 @@ package com.lawrence.web;
 
 import org.skife.jdbi.v2.DBI;
 
+import com.lawrence.web.db.Blog;
 import com.lawrence.web.db.UserDAO;
 import com.lawrence.web.health.MyHealthCheck;
+import com.lawrence.web.mongo.MongoDBHealthCheck;
+import com.lawrence.web.mongo.MongoManaged;
+import com.mongodb.DB;
+import com.mongodb.Mongo;
 
 import io.dropwizard.Application;
 import io.dropwizard.jdbi.DBIFactory;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
+import net.vz.mongodb.jackson.JacksonDBCollection;
 
 public class HelloWorldApplication extends Application<HelloWorldConfiguration>{
     
@@ -37,7 +43,7 @@ public class HelloWorldApplication extends Application<HelloWorldConfiguration>{
 
     @Override
     public void run(HelloWorldConfiguration configuration,
-                    Environment environment) {
+                    Environment environment) throws Exception {
         final HelloWorldResource resource = new HelloWorldResource(
                 configuration.getTemplate(),
                 configuration.getDefaultName()
@@ -60,6 +66,17 @@ public class HelloWorldApplication extends Application<HelloWorldConfiguration>{
         final UserDAO dao = jdbi.onDemand(UserDAO.class);
         environment.jersey().register(new UserResource(dao));
         System.out.println("=========RUN END=========");
-
+        
+        
+        Mongo mongo = new Mongo(configuration.mongohost, configuration.mongoport);
+        MongoManaged mongoManaged = new MongoManaged(mongo);
+        environment.lifecycle().manage(mongoManaged);
+        
+        environment.healthChecks().register("", new MongoDBHealthCheck(mongo));
+        
+        DB db = mongo.getDB(configuration.mongodb);
+        JacksonDBCollection<Blog, String> blogs = JacksonDBCollection.wrap(db.getCollection("blogs"), Blog.class, String.class);
+ 
+        environment.jersey().register(new BlogResource(blogs));
     }
 }

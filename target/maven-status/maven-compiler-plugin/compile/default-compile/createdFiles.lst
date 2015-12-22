@@ -1,6 +1,10 @@
+com/lawrence/web/mongo/MongoDBHealthCheck.class
+com/lawrence/web/mongo/MongoManaged.class
 com/lawrence/web/UserResource.class
 com/lawrence/web/HelloWorldApplication.class
+com/lawrence/web/db/Blog.class
 com/lawrence/web/HelloWorldResource.class
+com/lawrence/web/BlogResource.class
 com/lawrence/web/HelloWorldConfiguration.class
 com/lawrence/web/db/DAOResponse.class
 com/lawrence/web/Saying.class

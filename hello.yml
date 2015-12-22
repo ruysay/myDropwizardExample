@@ -24,3 +24,7 @@ database:
   evictionInterval: 10s
   minIdleTime: 1 minute
 
+mongohost: localhost
+mongoport: 27017
+mongodb: mydb
+
